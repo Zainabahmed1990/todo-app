@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.app {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	justify-content: center;
+	align-items: center;
+}
+.title {
+	font-family: 'Anton', sans-serif;
+	font-size: 38px;
+	color: #c2b4b4;
+}
+.inputContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+}
+.inputTxt {
+	width: 50%;
+	padding: 15px;
+	outline: none;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px #ddd;
+	font-size: 16px;
+}
+.addBtn {
+	width: 90px;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px #ddd;
+	border-left: 0;
+	font-size: 16px;
+}
+
+.inputTxt::placeholder {
+	color: #ddd;
+}
+.cardListContainer {
+	width: calc(50% + 120px);
+	position: relative;
+}
+.card {
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	align-items: center;
+}
+.status {
+	display: flex;
+	width: 30px;
+	margin-right: 15px;
+}
+.checkbox {
+	display: flex;
+	width: 25px;
+	height: 25px;
+	border-radius: 10px;
+	border: 2px solid #eee;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+}
+
+.checked {
+	height: 17px;
+	width: 17px;
+	border-radius: 6px;
+}
+
+.todo {
+	font-size: 16px;
+}
+.close {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.close:hover {
+	color: crimson;
+}
